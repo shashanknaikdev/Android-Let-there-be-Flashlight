@@ -1,0 +1,78 @@
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         android:background="@drawable/bg"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" >
+
+     <com.google.ads.AdView
+         android:id="@+id/adView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         ads:adSize="BANNER"
+         ads:adUnitId="a1503e69e65a9ed"
+         ads:loadAdOnCreate="true"
+         ads:testDevices="TEST_EMULATOR,EACA476933E8EEF87DF71A7F2F699CC9" >
+
+    </com.google.ads.AdView>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ImageButton
+        android:id="@+id/img_button_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:onClick="call_flash"
+        android:padding="25dp"
+        android:src="@drawable/camera_small" />
+
+    <ImageButton
+        android:id="@+id/img_button_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_button_flash"
+        android:onClick="call_screen"
+        android:padding="25dp"
+        android:src="@drawable/bright_screen_small" />
+
+    <TextView
+        android:id="@+id/text_flash_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_button_flash"
+        android:layout_alignRight="@+id/img_button_flash"
+        android:layout_below="@+id/img_button_flash"
+        android:gravity="center"
+        android:text="Camera Flash"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/MedTurquoise"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_screen_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_flash_light"
+        android:layout_alignBottom="@+id/text_flash_light"
+        android:layout_alignLeft="@+id/img_button_screen"
+        android:layout_alignRight="@+id/img_button_screen"
+        android:gravity="center"
+        android:text="Screen Light"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/MedTurquoise"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+  </LinearLayout>

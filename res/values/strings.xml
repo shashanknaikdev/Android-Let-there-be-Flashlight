@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Screen and LED Flashlight</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Flashlight</string>
+    <string name="title_activity_screen">ScreenLight</string>
+    <string name="title_activity_flash">LED Camera Flash</string>
+
+</resources>
